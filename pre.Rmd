@@ -1,0 +1,19 @@
+---
+title: "Presentation"
+output: ioslides_presentation
+---
+
+## Start
+
+- Yilun Zhang
+- July 17, 2018
+
+## Slide with Plot
+
+```{r,echo=FALSE, warnings=FALSE}
+library(plotly)
+library(ggplot2)
+a<-plot_ly(mtcars,x=~wt,y=~mpg,color=~disp)
+ggplotly(a)
+```
+
